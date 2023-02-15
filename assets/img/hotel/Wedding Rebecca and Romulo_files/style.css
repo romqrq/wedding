@@ -583,7 +583,7 @@ font-family: 'Tangerine', cursive;
   .mapouter {
     position:relative;
     text-align:right;
-    /* height:100%; */
+    height:100%;
     width:100%;
   }
   .gmap_canvas {
