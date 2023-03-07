@@ -159,7 +159,7 @@ font-family: 'Tangerine', cursive;
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: #212529b5;
+  background: rgb(255 255 255 / 66%);
 }
 
 #header .logo {
@@ -207,13 +207,13 @@ font-family: 'Allura', cursive;
   background: #ffbb38;
   color: #343a40;
 }
-
+/* 
 @media (max-width: 992px) {
   .get-started-btn {
     padding: 7px 20px 8px 20px;
     margin-right: 15px;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -247,7 +247,7 @@ font-family: 'Allura', cursive;
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 600;
-  color: #fff;
+  color: #202124;
   white-space: nowrap;
   transition: 0.3s;
   text-shadow: -3px 3px 5px #00000087;
@@ -264,8 +264,8 @@ font-family: 'Allura', cursive;
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    color: #ffc451;
-    text-shadow: -3px 3px 5px #00000087;
+  color: #202124;
+  text-shadow: -3px 3px 5px #ffc451;
 }
 
 .navbar .dropdown ul {
@@ -449,6 +449,7 @@ font-family: 'Allura', cursive;
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
+  min-height: 100vh;
   background: url("../img/paper_bg.jpg") top center;
   background-size: cover;
   position: relative;
@@ -473,7 +474,17 @@ font-family: 'Allura', cursive;
   height: 100%;
   padding-top: 7rem;
 }
-
+.flowers {
+  background: url("../img/hero/AdobeStock_570336211.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: fixed;
+  height: 90vh;
+  width: 85vw;
+  top: 0px;
+  z-index: -1;
+  margin: auto;
+}
 .flowers-row {
   margin-bottom: 14vh;
 }
@@ -504,8 +515,8 @@ font-family: 'Tangerine', cursive;
 }
 
 #hero h2 {
-  font-family: "Great Vibes", sans-serif;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
   margin: 10px 0 0 0;
   font-size: 2rem;
 }
@@ -555,45 +566,13 @@ font-family: 'Tangerine', cursive;
   border-color: #ffc451;
 }
 
+.rsvp-button {
+  margin: 1rem auto 9rem!important;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
-  }
-}
-@media (max-width: 768px) and (max-width:1023px) {
-  .flowers {
-    max-height: 90vh!important;
-    max-width: 90vw!important;
-  }
-  #hero h1 {
-    font-size: 4.5rem;
-    line-height: 7rem;
-    margin: 5.5rem 0 0;
-  }
-  #hero h2 {
-    font-size: 1.5rem;
-  }
-  .flowers-row {
-    margin-bottom: 2rem;
-  }
-  a.get-started-btn.scrollto {
-    font-size: 1.5rem;
-  }
-  .rsvp-button {
-    margin: 3rem auto 13rem!important;
-  }
-  a.get-started-btn.scrollto.desktop {
-    display: none;
-  }
-  iframe#gmap_canvas {
-    height: 30vh;
-  }
-  iframe#gmap_canvas {
-    height: 30vh;
-    width: 100%;
-  }
-  .google-form iframe {
-    width: 100%;
   }
 }
 
@@ -628,6 +607,157 @@ font-family: 'Tangerine', cursive;
     padding-top: 2.5rem;
     margin-top: 1rem;
   }
+}
+
+@media (min-width: 768px) and (max-width:818px) {
+  .flowers {
+    max-height: 90vh!important;
+    max-width: 90vw!important;
+  }
+  #hero .container {
+    /* height: 100vh; */
+  }
+  #hero h1 {
+    font-size: 4.5rem;
+    line-height: 7rem;
+    margin: 6.5rem 0 0;
+  }
+  #hero h2 {
+    font-size: 1.5rem;
+  }
+  .flowers-row {
+    margin-bottom: 2rem;
+  }
+  a.get-started-btn.scrollto {
+    font-size: 1.5rem;
+  }
+  .rsvp-button {
+    margin: 3rem auto 13rem!important;
+  }
+  a.get-started-btn.scrollto.desktop {
+    display: none;
+  }
+  iframe#gmap_canvas {
+    height: 30vh;
+  }
+  iframe#gmap_canvas {
+    height: 30vh;
+    width: 100%;
+  }
+  .google-form iframe {
+    width: 100%;
+  }
+}
+
+@media (min-width: 819px) and (max-width:1023px) {
+  .flowers {
+    max-height: 90vh!important;
+    max-width: 90vw!important;
+  }
+  #hero .container {
+    height: 100vh;
+  }
+  #hero h1 {
+    font-size: 5rem;
+    line-height: 7rem;
+    margin: 9rem 0 0;
+  }
+  #hero h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+  .flowers-row {
+    margin-bottom: 2rem;
+  }
+  a.get-started-btn.scrollto {
+    font-size: 1.5rem;
+  }
+  .rsvp-button {
+    margin: 2rem auto 17rem!important;
+  }
+  a.get-started-btn.scrollto.desktop {
+    display: none;
+  }
+  iframe#gmap_canvas {
+    height: 30vh;
+  }
+  iframe#gmap_canvas {
+    height: 30vh;
+    width: 100%;
+  }
+  .google-form iframe {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .buttons-index {
+    display: none;
+  }
+  .flowers {
+    background: url("../img/hero/AdobeStock_570336211-2.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: fixed;
+    height: 90vh;
+    width: 85vw;
+    top: 0px;
+    z-index: -1;
+    margin: 3rem auto;
+  }
+  .flowers {
+    max-height: 90vh!important;
+    max-width: 60vw;
+    /* max-width: 90vw!important; */
+  }
+  .flowers-row {
+    margin-bottom: 0rem!important;
+  }
+  .rsvp-button {
+    /* margin: 0 auto 9rem!important; */
+    margin-top: 0!important;
+    margin-bottom: 9rem!important;
+  } 
+  #hero .container {
+    height: 100vh;
+  }
+  #hero h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+    margin: 8rem 0 0;
+  }
+  #hero h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .flowers-row {
+    margin-bottom: 2rem;
+  }
+  .get-started-btn {
+    width: 10rem!important;
+  }
+  a.get-started-btn.scrollto {
+    font-size: 1.5rem;
+  }
+  /* .rsvp-button {
+    margin: 2rem auto 17rem!important;
+  } */
+  a.get-started-btn.scrollto.desktop {
+    display: none;
+  }
+  iframe#gmap_canvas {
+    height: 30vh;
+  }
+  iframe#gmap_canvas {
+    height: 30vh;
+    width: 100%;
+  }
+  .google-form iframe {
+    width: 100%;
+  }
+}
+
+
   
   .get-started-btn {
     color: #fff;
@@ -637,9 +767,7 @@ font-family: 'Tangerine', cursive;
     width: 8rem;
     margin: auto;
   }
-  .rsvp-button {
-    margin: 1rem auto 9rem!important;
-  }
+  
   /* iframe {
     width="600"; 
     height="500" 
@@ -1772,14 +1900,4 @@ section#hero {
 
 /* -------------------------------------------- */
 /* BORDER */
-.flowers {
-  background: url("../img/hero/AdobeStock_570336211.png") no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: fixed;
-  height: 90vh;
-  width: 85vw;
-  top: 0px;
-  z-index: -1;
-  margin: auto;
-}
+
